@@ -36,13 +36,13 @@ const PlanYourTrip = () => {
             <p className="trip-subtitle">Explore Sri Lanka your way -pick a theme your journey.</p>
 
             <div className="trip-grid">
-        {categories.map((cat, index) => (
+        {categories.map((ima, index) => (
           <div className="trip-card" key={index}>
-            <img src={cat.img} alt={cat.title} />
+            <img src={ima.img} alt={ima.title} />
             <div className="trip-overlay">
-              <h3>{cat.title}</h3>
+              <h3>{ima.title}</h3>
             </div>
-            <p className="trip-desc">{cat.desc}</p>
+            <p className="trip-desc">{ima.desc}</p>
           </div>
         ))}
       </div>
