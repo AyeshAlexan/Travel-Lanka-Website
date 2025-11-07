@@ -4,6 +4,8 @@ import beach from '../assets/beach.jpg';
 import nature from '../assets/nature.jpeg';
 import hotel from '../assets/Hotel.JPG';
 import mountain from '../assets/mountain.jpg';
+import { useNavigate } from 'react-router-dom';
+import About from '../pages/About';
 
 const categories = [
   { img: beach, title: 'BEACH' },
@@ -13,24 +15,9 @@ const categories = [
 ];
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   return (
     <div className="hero-section">
-       { /* <nav className="hero-nav">
-        <div className="logo">Travel Lanka</div>
-        <ul className="nav-links">
-          <li>Home</li>
-          <li>About</li>
-          <li>Explore</li>
-          <li>Contact</li>
-        </ul>
-        <div className="social-icons">
-          <i className="fa fa-search"></i>
-          <i className="fab fa-facebook-f"></i>
-          <i className="fab fa-instagram"></i>
-          <i className="fab fa-linkedin-in"></i>
-        </div>
-      </nav> */}
-
       <div className="hero-content">
         <div className="left-content">
           <h1>
@@ -38,7 +25,7 @@ const HeroSection = () => {
             BEAUTY OF<br />
             SRI LANKA.
           </h1>
-          <button className="hero-btn">LEARN MORE </button>
+          <button className="hero-btn" onClick={() => navigate('/about')  }>LEARN MORE </button>
         </div>
 
         <div className="scroll-wrapper">
