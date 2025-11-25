@@ -5,7 +5,7 @@ import '../styles/NavBar.css';
 function NavBar() {
   return (
     <nav className="hero-nav">
-      <div className="logo">Travel Lanka</div>
+      <a className="logo" href="/">Travel Lanka</a>
       <ul className="nav-links">
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
@@ -13,9 +13,9 @@ function NavBar() {
         <li><Link to="/contact">Contact</Link></li>
       </ul>
       <div className="social-icons">
-        <i className="fab fa-facebook-f"></i>
-        <i className="fab fa-instagram"></i>
-        <i className="fab fa-linkedin-in"></i>
+        <a href="https://facebook.com" ><i className="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" ><i className="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com" ><i className="fab fa-linkedin-in"></i></a>
       </div>
     </nav>
   );
