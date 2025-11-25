@@ -7,7 +7,7 @@ function NavBar() {
     <nav className="hero-nav">
       <a className="logo" href="/">Travel Lanka</a>
       <ul className="nav-links">
-        <li><Link to="/">Home</Link></li>
+        <li><Link to="/Home">Home</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/explore">Explore</Link></li>
         <li><Link to="/contact">Contact</Link></li>
