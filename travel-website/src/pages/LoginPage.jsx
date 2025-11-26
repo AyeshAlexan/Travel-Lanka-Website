@@ -36,6 +36,7 @@ function LoginPage() {
 
         {/* LEFT SIDE */}
         <div className="login-left">
+          <h1 className="logo">Travel Lanka</h1>
           <h2 className="brand">Welcome Back 👋</h2>
           <p className="subtext">Sign in to continue your journey</p>
 
@@ -79,7 +80,7 @@ function LoginPage() {
 
           <p className="footer-links">
             Don’t have an account?
-            <a href="/register"> Create one</a>
+            <a href="/register"> <p className ="create-one">Create one</p></a>
           </p>
         </div>
 
@@ -93,43 +94,9 @@ function LoginPage() {
           <img src={loginImage} className="right-img" alt="travel" />
 
           {/* Floating Tags */}
-          <motion.div
-            className="tag top-left"
-            initial={{ x: -20, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ delay: 0.3 }}
-          >
-            Explore Places
-            <div className="season-dots">
-              <span className="dot pink"></span>
-              <span className="dot yellow"></span>
-              <span className="dot green"></span>
-              <span className="dot purple"></span>
-            </div>
-          </motion.div>
 
-          <motion.div
-            className="tag right-box"
-            initial={{ x: 20, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ delay: 0.5 }}
-          >
-            Color Vibes
-            <div className="color-pills">
-              <span className="pill" style={{ background: "#2ecc71" }}></span>
-              <span className="pill" style={{ background: "#e67e22" }}></span>
-              <span className="pill" style={{ background: "#3498db" }}></span>
-            </div>
-          </motion.div>
+          
 
-          <motion.div
-            className="tag bottom-left"
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.7 }}
-          >
-            Best Travel Spots
-          </motion.div>
         </motion.div>
       </motion.div>
     </div>
