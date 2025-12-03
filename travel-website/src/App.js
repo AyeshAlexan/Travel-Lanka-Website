@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import NavBar from "./components/NavBar";
-
 import HomePage from "./pages/HomePage";
 import About from "./pages/About";
 import Explore from "./pages/Explore";
@@ -14,10 +13,10 @@ function App() {
     <Router>
       <Routes>
 
-        {/* 🚀 Default page: LOGIN */}
+        {/* Default page: LOGIN */}
         <Route path="/" element={<LoginPage />} />
 
-        {/* 🌐 Pages with Navbar */}
+        {/* Pages with Navbar */}
         <Route
           path="/home"
           element={

@@ -92,11 +92,6 @@ function LoginPage() {
           transition={{ duration: 0.6 }}
         >
           <img src={loginImage} className="right-img" alt="travel" />
-
-          {/* Floating Tags */}
-
-          
-
         </motion.div>
       </motion.div>
     </div>
